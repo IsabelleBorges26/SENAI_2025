@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <select name = "status" id = "status">
+        <option value="Aberto">Aberto</option>
+        <option value="Em andamento">Em andamento</option>
+        <option value="Resolvido">Resolvido</option>
+    </select>
+    <button id = "filtrar">Buscar</button>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Solicitante</th>
+                <th>Prioridade</th>
+                <th>Status</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="linhaModelo">
+                <td class = "id">1</td>
+                <td class = "titulo">Erro ao gerar relatório financeiro</td>
+                <td class = "solicitante">Ana Souza</td>
+                <td class = "prioridade">Alta</td>
+                <td class = "status">Aberto</td>
+                <td class = "data">2025-10-20</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src = "script.js"> </script>
+</html>

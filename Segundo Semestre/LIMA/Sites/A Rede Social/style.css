@@ -1,0 +1,190 @@
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    color: #000000;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background:#000000;
+    color: #000000;
+}
+
+    header {
+        background: url("capa.webp") no-repeat center center;
+        background-size: cover;   
+        height: 100vh;            
+        width: 100%;              
+        position: relative;       
+    }         
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffffff9f;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background: #fff;
+    color:#32160c;
+
+}
+
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.sobre-filme {
+    display: flex;
+    align-items: flex;
+    gap: 1rem;
+}
+
+.foto-filme {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #32160c;
+}
+
+.sobre-informacoes {
+    flex:1;
+}
+
+.sobre-informacoes h2 {
+    margin-bottom: 0.5rem;
+}
+
+.sobre-informacoes p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+
+#contatos {
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    background: #ffdfc290;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.curiosidades-filme {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+}
+
+.item {
+    display: flex;           
+    align-items: center;    
+    gap: 1rem;              
+}
+
+.foto-curiosidades {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #32160c;
+}
+
+.sobre-informacoes {
+    display: flex;
+    color: #32160c;
+    flex-direction: column; 
+}
+
+.tabela-container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+  
+}
+
+.tabela-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #080909;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    color:#fff
+}
+
+td img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+tbody tr:nth-child {background-color:#ffffff;}
+
+
+tbody td {
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+tbody tr:hover {
+    transform: scale(1.01);
+    filter:brightness(0.95);
+}
+
+thead th, tbody td {
+    border: 3px solid #000000; 
+}

@@ -1,0 +1,703 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1756466003799
+  modified: 1756466003799
+  description: ""
+collection:
+  - name: "Biblioteca "
+    meta:
+      id: fld_227de1ede83d4703a4663c41ae8c3b01
+      created: 1756466427061
+      modified: 1756466427061
+      sortKey: -1756466427061
+      description: ""
+    children:
+      - name: Usuários
+        meta:
+          id: fld_1afd4b3c3ee64c9c8e785f72cd4c16e5
+          created: 1756466481513
+          modified: 1756466481513
+          sortKey: -1756466481513
+          description: ""
+      - name: Livros
+        meta:
+          id: fld_edfbc60571884fd393ff28a538878467
+          created: 1756476809751
+          modified: 1756476809751
+          sortKey: -1756476809751
+          description: ""
+  - name: Aplicativo de Músicas
+    meta:
+      id: fld_75143cdbf91243e2b42eac1c7051efad
+      created: 1757073988115
+      modified: 1757074123159
+      sortKey: -1757073988115
+      description: ""
+    children:
+      - name: Usuários
+        meta:
+          id: fld_42c2148924454bf8bd1e0b7967bfe9d5
+          created: 1757074039583
+          modified: 1757074039583
+          sortKey: -1757074039583
+          description: ""
+        children:
+          - url: http://localhost:3000/usuario
+            name: Alterar
+            meta:
+              id: req_95c2b205b42d430db59a69de7db3e2ea
+              created: 1757074379523
+              modified: 1757076647780
+              isPrivate: false
+              description: ""
+              sortKey: -1757074379523
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"id": "123",
+                		"nome": "Isabelle",
+                		"email": "IsabelleBorges@gmail"
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/usuario
+            name: Cadastrar
+            meta:
+              id: req_613f1facda7142998a3458a52486ea09
+              created: 1757074381831
+              modified: 1757074689015
+              isPrivate: false
+              description: ""
+              sortKey: -1757074381831
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "id": "789",
+                  "nome": "Natalia",
+                  "email": "Natalia@gmail"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/usuario/789
+            name: Apagar
+            meta:
+              id: req_73ebf0ae769244acb2eee4d5e6f249c6
+              created: 1757074384225
+              modified: 1757074740564
+              isPrivate: false
+              description: ""
+              sortKey: -1757074384225
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/usuarios/456
+            name: Buscar
+            meta:
+              id: req_e04b6faa343d4b03b9948d0815bf6027
+              created: 1757074386004
+              modified: 1757076594415
+              isPrivate: false
+              description: ""
+              sortKey: -1757074386004
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/usuarios
+            name: Listar
+            meta:
+              id: req_2f681f2032014913887010b05923bba4
+              created: 1757074387848
+              modified: 1757074532603
+              isPrivate: false
+              description: ""
+              sortKey: -1757074387848
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/usuario/123
+            name: Atualizar
+            meta:
+              id: req_779aa9548a8c474aa9cd75cc333c1acc
+              created: 1757074390010
+              modified: 1757076663886
+              isPrivate: false
+              description: ""
+              sortKey: -1757074390010
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"idade": "17"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Músicas
+        meta:
+          id: fld_66bd264b406a465baada3b86d75729d3
+          created: 1757074067962
+          modified: 1757074067962
+          sortKey: -1757074067962
+          description: ""
+        children:
+          - url: http://localhost:3000/musica
+            name: Alterar
+            meta:
+              id: req_e1d1e15a63af42f394ddfe581d5bfdc1
+              created: 1757074311341
+              modified: 1757077203080
+              isPrivate: false
+              description: ""
+              sortKey: -1757074311341
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"id": "456",
+                		"titulo": "Let Me Put My Love Into You",
+                		"artista": "AC/DC muito top",
+                		"duracao": "4:12"
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/musica
+            name: Cadastrar
+            meta:
+              id: req_78a560ffdef54b27bb2c6f832df28000
+              created: 1757074314488
+              modified: 1757076919004
+              isPrivate: false
+              description: ""
+              sortKey: -1757074314488
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                        "id": "789",
+                        "titulo": "Sweet Child O' Mine",
+                        "artista": "Guns N' Roses",
+                        "duracao": "5:03"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/musica/789
+            name: Apagar
+            meta:
+              id: req_317eec05d7654e26b4ba15d44e7cb1a0
+              created: 1757074316931
+              modified: 1757076946615
+              isPrivate: false
+              description: ""
+              sortKey: -1757074316931
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/musicas/123
+            name: Buscar
+            meta:
+              id: req_887a24571f0543e0ad13cff39f66b372
+              created: 1757074319641
+              modified: 1757077172698
+              isPrivate: false
+              description: ""
+              sortKey: -1757074319641
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/musicas
+            name: Listar
+            meta:
+              id: req_be39cb2a22ee4d6fa5ac8ee2421277d0
+              created: 1757074321728
+              modified: 1757076698847
+              isPrivate: false
+              description: ""
+              sortKey: -1757074321728
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/musica/123
+            name: Atualizar
+            meta:
+              id: req_da71fdabf9334381bf1bd69c95206a11
+              created: 1757074323870
+              modified: 1757077219968
+              isPrivate: false
+              description: ""
+              sortKey: -1757074323870
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"categoria": "Rock dos bons"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Playlists
+        meta:
+          id: fld_2a3253cce9fe4eedbd96794d23035040
+          created: 1757074080484
+          modified: 1757074233126
+          sortKey: -1757074080484
+          description: ""
+        children:
+          - url: http://localhost:3000/playlist
+            name: Alterar
+            meta:
+              id: req_9c67ed6445ee4e1a951a610f876706a5
+              created: 1757074225689
+              modified: 1757077581486
+              isPrivate: false
+              description: ""
+              sortKey: -1757074225689
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"id": "123",
+                		"usuario_id": "123",
+                		"nome": "Classicas🎻"
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlist
+            name: Cadastrar
+            meta:
+              id: req_c947468f9e5949e88ea1e8b373748724
+              created: 1757074247174
+              modified: 1757077349861
+              isPrivate: false
+              description: ""
+              sortKey: -1757074247174
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"id": "789",
+                	"usuario_id": "456",
+                	"nome": "Funk"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlist/789
+            name: Apagar
+            meta:
+              id: req_9d05b4482edf40118a5e90acece882eb
+              created: 1757074263077
+              modified: 1757077397427
+              isPrivate: false
+              description: ""
+              sortKey: -1757074263077
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlists/123
+            name: Buscar
+            meta:
+              id: req_c2e4513124694683b87832ec1a5d7f94
+              created: 1757074275225
+              modified: 1757077285471
+              isPrivate: false
+              description: ""
+              sortKey: -1757074275225
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlists
+            name: Listar
+            meta:
+              id: req_b07b7d08fb9240c6acc74a822a3885cb
+              created: 1757074284798
+              modified: 1757077252496
+              isPrivate: false
+              description: ""
+              sortKey: -1757074284798
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlist/123
+            name: Atualizar
+            meta:
+              id: req_de3674b3e3454981b1da1d5e6133b287
+              created: 1757074296922
+              modified: 1757077597579
+              isPrivate: false
+              description: ""
+              sortKey: -1757074296922
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nota": "9"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Playlists Músicas
+        meta:
+          id: fld_fb81a9c2561f4456aad8b95af955f0dd
+          created: 1757074115873
+          modified: 1757074115873
+          sortKey: -1757074115873
+          description: ""
+        children:
+          - url: http://localhost:3000/playlistmusica
+            name: Alterar
+            meta:
+              id: req_3fdb94ae1a874c7aa43a8aebcf867bf1
+              created: 1757074133668
+              modified: 1757077938308
+              isPrivate: false
+              description: ""
+              sortKey: -1757074133668
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"ordem": "1",
+                		"id": "123",
+                		"musica_id": "123",
+                		"playlist_id": "1"
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlistmusica
+            name: Cadastrar
+            meta:
+              id: req_a1b21e4669014288b42967b3941d335f
+              created: 1757074148736
+              modified: 1757077733479
+              isPrivate: false
+              description: ""
+              sortKey: -1757074148736
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"ordem": "3",
+                		"id": "789",
+                		"musica_id": "123",
+                		"playlist_id": "3"
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlistmusica/789
+            name: Apagar
+            meta:
+              id: req_86a504f2d6324491bcca839cf537d452
+              created: 1757074162878
+              modified: 1757077766439
+              isPrivate: false
+              description: ""
+              sortKey: -1757074162878
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlistmusicas/456
+            name: Buscar
+            meta:
+              id: req_0e3a1623e1324e4580efc7f3a835ab39
+              created: 1757074174133
+              modified: 1757077898399
+              isPrivate: false
+              description: ""
+              sortKey: -1757074174133
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlistmusicas
+            name: Listar
+            meta:
+              id: req_a1b61b1026114e039b753ea391bba835
+              created: 1757074183645
+              modified: 1757077666459
+              isPrivate: false
+              description: ""
+              sortKey: -1757074183645
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/playlistmusica/123
+            name: Atualizar
+            meta:
+              id: req_b95d6780df04489bbcca5a28f4737c5f
+              created: 1757074195126
+              modified: 1757077962212
+              isPrivate: false
+              description: ""
+              sortKey: -1757074195126
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nota": "9"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756466036788
+    modified: 1756466036788
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756466036611
+    modified: 1756466036611
+    isPrivate: false

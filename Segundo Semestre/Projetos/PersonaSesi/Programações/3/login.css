@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(to bottom, #fff, #fafafa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.login-box {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+
+.icon {
+    background-color: #fdecec;
+    color: #e63946;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 1rem;
+}
+
+
+.login-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 1.2rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+.input-icon {
+    padding: 0.6rem 0.8rem;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+
+.btn-primary {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 0.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #c92e3a;
+}
+
+.btn-secondary {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: #111;
+    padding: 0.7rem;
+    width: 100%;
+    margin-top: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #f3f3f3;
+}

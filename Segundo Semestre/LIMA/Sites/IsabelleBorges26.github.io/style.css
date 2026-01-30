@@ -1,0 +1,201 @@
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background:#f4f4f4;
+    color: #93253d;
+}
+
+    header {
+        background: url("Capa.png") no-repeat center center;
+        background-size: cover;   
+        height: 100vh;            
+        width: 100%;              
+        position: relative;      
+        color: rgb(227, 123, 189);    
+    }         
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #93253d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ef8799;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 2000px;
+    margin: auto;
+    color: #93253d;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: flex;
+    gap: 1rem;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #93253d;
+}
+
+.sobre-informacoes {
+    flex:1;
+}
+
+.sobre-informacoes h2 {
+    margin-bottom: 0.5rem;
+}
+
+.sobre-informacoes p {
+    font-size: 1rem;
+    color: #93253d;
+}
+.cards {
+    display: block; 
+    gap: 1rem; 
+}
+
+.card {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(220, 100, 160, 0.2) 100%);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+.hobby i{
+    font-size: 2rem;
+    color: crimson;
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.projeto {
+    display: inline-block;  
+    vertical-align: top;    
+    width: 250px;            
+    text-align: center;     
+}
+
+.projeto img {
+    aspect-ratio: 16/9;
+    width: 250px;     
+    border-radius: 8px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.skill {
+  width: 100%;                
+  padding: 1rem;              
+  background: #ef8799;
+  color: white;
+  border-radius: 8px;         
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+  box-sizing: border-box;     
+}
+
+.skill:hover {
+  transform: scale(1.05);    
+  background: #93253d;
+}
+
+#contatos {
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    background: #fbc7d0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.curiosidades-mim {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+}
+
+.item {
+    display: flex;           
+    align-items: center;    
+    gap: 1rem;              
+}
+
+.foto-curiosidades {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #93253d;
+}
+
+.sobre-informacoes {
+    display: flex;
+    flex-direction: column; 
+}
+

@@ -1,0 +1,204 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fafafa; 
+  color: #222;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.btn-voltar {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-voltar:hover {
+  background: #f8f8f8;  
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-sair {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-sair:hover {
+  background: #f8f8f8;
+}
+
+.container {
+  padding: 2rem 4rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: stretch;
+}
+
+.card {
+  background: #fff; 
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.6rem 0;
+  background: #f0f0f0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.checklist li:hover {
+  background: #e8e8e8;
+}
+
+.checklist input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.checklist input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.checklist input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 0;
+  left: 3px;
+  font-size: 14px;
+  color: white;
+}
+
+.checklist label {
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.abas {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.aba {
+  background: #f2f2f2;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.aba:hover {
+  background: #e0e0e0;
+}
+
+.aba.ativa {
+  background: #3f51b5;
+  color: white;
+}
+
+.conteudo {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.grafico, .atividades {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  flex: 1;
+  min-width: 300px;
+}
+
+.atividade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 0.8rem 0;
+  transition: background 0.2s;
+}
+
+.atividade:hover {
+  background: #f9f9f9;
+}
+
+.materia {
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.verde-bg { background: #4caf50; }
+.azul-bg { background: #3f51b5; }
+
+.nota {
+  font-weight: bold;
+  font-size: 1.1rem;
+}

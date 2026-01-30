@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 03 </title>
+</head>
+
+<body>
+    <center><h1> Lanchonete da Isabelle </h1>
+    <hr>
+    <h3> Monte seu lanche </h3>
+    </center>
+
+    <form action ="" method ="">
+
+        <p>
+            <label  for="Nome"> Nome Completo: </label> 
+            <input type="text" id="Nome" placeholder=" Informe seu nome" required />
+        </p>
+
+        <p>
+            <label for="DataNasc"> Data de Nascimento: </label>
+            <input type="date" id="DataNasc" />
+        </p>
+
+        <p>
+            <label for="Indicação"> Você nos indicaria? </label>
+            <input type="number" id="Indicação" placeholder=" 1 - 5" min= "1" max= "5" />
+        </p>
+
+        <p>
+            <label for="Email"> E-Mail </label>
+            <input type="email" id="Email" placeholder=" Informe seu E-Mail" required />
+        </p>
+
+        <p>
+            <label for="Cor"> Qual sua cor favorita? </label>
+            <input type="color" id="Cor" />
+        </p>
+
+        <p>
+            <label for="Volume"> Em qual volume você ouve música? (0 a 100) </label>
+            <input type="range" id="Volume" min="0" max="100" value="50" oninput="ValorVolume.textContent = this. value"/>
+            <span id="ValorVolume"> 50 </span>
+
+            <style>
+                #Volume 
+                {
+                    accent-color: rgb(255, 109, 216);;
+                }
+            </style>
+            
+        </p>
+            <fieldset>
+                <legend> Gênero </legend>
+                <input type="radio" id="Masc" name="Genero" />
+                <label for="Masc" > Masculino </label>
+                
+                <br>
+                <input type="radio" id="Fem" name="Genero" />
+                <label for="Fem" > Feminino </label>
+               
+                <br>
+                <input type="radio" id="Outros" name="Genero" />
+                <label for="Outros" > Outros </label>
+                
+                <style>
+                #Masc 
+                {
+                    accent-color: rgb(114, 109, 255);;
+                }
+                #Fem 
+                {
+                    accent-color: rgb(255, 109, 216);;
+                }
+                #Outros
+                {
+                    accent-color: rgb(109, 255, 131);;
+                }
+                </style>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend> Monte seu lanche </legend>
+                <input type="checkbox" id="salada" />
+                <label for="salada"> Salada </label>
+                <input type="checkbox" id="hamb" />
+                <label for="hamb"> Hamburger </label>
+                <input type="checkbox" id="tomate" />
+                <label for="tomate"> Tomate </label>
+                <input type="checkbox" id="cebola" />
+                <label for="cebola"> Cebola Caramelizada </label>
+                <input type="checkbox" id="Mussarela" />
+                <label for="Mussarela"> Mussarela de Bufula </label>
+                <input type="checkbox" id="Bacon" />
+                <label for="Bacon"> Alface </label>
+
+                <style>
+                #salada 
+                {
+                    accent-color: rgb(0, 90, 17);;
+                }
+                #hamb
+                {
+                    accent-color: rgb(73, 26, 0);;
+                }
+                #tomate
+                {
+                    accent-color: rgb(208, 0, 0);;
+                }
+                #cebola
+                {
+                    accent-color: rgb(194, 188, 0);;
+                }
+                #Mussarela
+                {
+                    accent-color: rgb(251, 255, 137);;
+                }
+                #Bacon
+                {
+                    accent-color: rgb(255, 108, 123);;
+                }
+                </style>
+
+            </fieldset>
+
+        <p>
+                <fieldset>
+                <legend> Bebidas </legend>
+                <input type="radio" id="coca" name="Bebidas" />
+                <label for="coca" > Coca cola </label>
+                <br>
+                <img src="https://www.shutterstock.com/image-photo/novopolotskbelarus-01182025-glass-bottle-coca-600nw-2574145083.jpg" alt="Com limão e gelo!" widht = "100" height = "100">
+
+                <br>
+                <input type="radio" id="SodaIta" name="Bebidas" />
+                <label for="SodaIta" > Soda Italiana </label>
+                <br>
+                <img src="https://sachefmio.blob.core.windows.net/fotos/soda-italiana-35f36a4d-2086-46f8-8ae9-4e6f7edc853e.jpg" alt="Sabor: Maça verde!" widht = "100" height = "100">
+
+                <br>
+                <input type="radio" id="SucoMor" name="Bebidas" />
+                <label for="SucoMor" > Suco de Morango </label>
+                <br>
+                <img src="https://s2-receitas.glbimg.com/nUoNlHBDl8lHba8CuQej1ecELWw=/0x0:199x254/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2013/04/28/23_37_03_588_suco_morango.jpg" alt="Com gelo e açucar!" widht = "100" height = "100">
+                </fieldset>
+        </p>
+
+        <p>
+            <label for="Info"> Informações Adicionais </label>
+            <textarea id="info"> </textarea>
+        </p>
+
+        <p>
+            <label for="Cidade"> Informe a cidade </label>
+            <select id="Cidade" > 
+                <option> Jaguariúna </option>
+                <option> Amparo </option>
+                <option> Pirrasununga </option>
+                <option> Pedreira </option>
+                <option> Monte Alegre do Sul </option>
+                <option> Mostarda </option>
+                <option> Itapira </option>
+            </select>
+        </p>
+
+        <p>
+            <input type="reset" value="Limpar Form" />
+            <button onclick="enviar()">Enviar </button>
+            <script> 
+                function enviar(){
+                    alert ("Dados enviados com sucesso!")
+                }
+            </script>
+        </p>
+
+</form>
+</body>
+</html>

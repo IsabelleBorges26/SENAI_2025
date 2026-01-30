@@ -1,0 +1,112 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: 'Times New Roman', serif;
+}
+
+ h1 {font-size: 3 rem;}
+ h2 {font-size: 2rem;}
+ h3 {font-size: 1.25rem;}
+ h4 {font-size: 0.875rem;}
+
+ main {
+    min-height: calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+    
+}
+
+ nav {
+    background: #000000;
+    height: 3rem;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .navigator {
+    width: 90vw;
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+ }
+
+ .navigator h1 {
+    margin-bottom: 0;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+ }
+
+ .links {display: flex;}
+
+ nav a {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    color: hsl(205, 86%, 17%);
+    letter-spacing: 0.1rem;
+    margin-right: 1rem;
+ }
+
+
+ .container {
+    text-align: center;
+    background: no-repeat center center; /* centraliza a imagem */
+    background-size: cover; /* faz a imagem preencher a tela inteira */
+ }
+
+ .container h2 {
+    background: #000000;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2.5rem;
+ }
+
+ .botao-style {
+    font-family: Tahoma;
+    text-transform: uppercase;
+    background: transparent;
+    color: #000000;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    border: 2px solid #000000;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+}
+
+ .botao-style:hover {
+    color: #fff;
+    background: #000000;
+ }
+
+

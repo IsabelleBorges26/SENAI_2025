@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /*Netrito*/
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #85a4c4;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.produto-container {
+    display: flex;
+    flex-direction:row;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.produto-container h2 {
+    margin-bottom: 20px;
+    text-align:center;
+    color: #2c3e50;
+}
+
+div {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #2c3e50;
+    color: #fff;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+tbody tr:nth-child(1) {background-color:#f5f1f1;}
+tbody tr:nth-child(2) {background-color:#dbd6d6;}
+tbody tr:nth-child(3) {background-color:#b7b4b4;}
+tbody tr:nth-child(4) {background-color:#9c9999;}
+tbody tr:nth-child(5) {background-color:#807d7d;}
+
+tbody td {
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+tbody td a {
+    color:#2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+tbody td a:hover {
+    color: #85a4c4;
+    text-decoration: underline;
+}
+
+tbody tr {
+    transition: background 0.3s, transform 0.2s;
+}
+
+tbody tr:hover {
+    transform: scale(1.01);
+    filter:brightness(0.95);
+}
+
+.preco {
+    color:#2c3e50;
+    font-weight: bold;
+}
+
+.estoque {
+    font-weight: bold;
+}
+
+.estoque.baixo {
+    color:#860202;
+}
+
+.estoque.alto {
+    color:#01850a;
+}
+
+footer {
+    background:#2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+fieldset {
+    margin: 20px;
+}
+
+fieldset #preto {
+    accent-color: rgb(0, 0, 0);;
+}
+
+fieldset #branco {
+    accent-color: rgb(235, 219, 219);;
+}
+
+fieldset #prata {
+    accent-color: rgb(106, 106, 106);;
+}

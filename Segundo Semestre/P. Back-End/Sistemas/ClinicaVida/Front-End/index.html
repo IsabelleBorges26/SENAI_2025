@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsultaVida</title>
+     <link rel = "stylesheet" href = "style.css">
+</head>
+<header>
+        <h1>Clínica Vida+</h1>
+        </header>
+<body>
+    <body>
+        <div class = "cartao">
+    <button id = "listar">Listar</button>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome Paciente</th>
+                <th>Telefone</th>
+                <th>Medico</th>
+                <th>Especiallidade</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+            <tr id="linhaModelo">
+                <td class = "id">1</td>
+                <td class = "nome_Paciente">Ana Costa</td>
+                <td class = "telefone">(11) 99999-1234</td>
+                <td class = "medico">Dra.Camila</td>
+                <td class = "especialidade">Cardiologista</td>
+                <td class = "data">2025-10-20</td>
+                <td class = "hora">14:00</td>
+                <td class = "status">Agendada</td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+    
+    <button id = "buscar">Buscar</button>
+    <select name = "especialidade" id = "espec">
+        <option value="Cardiologista">Cardiologista</option>
+        <option value="Ortopedia">Ortopedia</option>
+        <option value="Clinica Geral">Clinica Geral</option>
+    </select>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome Paciente</th>
+                <th>Medico</th>
+                <th>Especiallidade</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+            <tr id="linhaModelo">
+                <td class = "id">5</td>
+                <td class = "nome Paciente">Julia Souza</td>
+                <td class = "medico">Dra.Camila</td>
+                <td class = "especialidade">Ortopedia</td>
+                <td class = "data">2024-09-29</td>
+                <td class = "hora">13:45</td>
+                <td class = "status">Agendada</td>
+            </tr>
+        </thead>
+</body>
+<script src = "script.js"></script>
+</html>

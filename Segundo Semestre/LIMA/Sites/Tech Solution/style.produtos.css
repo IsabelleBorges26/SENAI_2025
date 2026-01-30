@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.produto-container {
+    display: flex;
+    flex-direction:row;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.produto-container h2 {
+    margin-bottom: 20px;
+    text-align:center;
+    color: #2c3e50;
+}
+
+div {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    background:#2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+fieldset {
+    margin: 20px;
+}
+
+fieldset #preto {
+    accent-color: rgb(0, 0, 0);;
+}
+
+fieldset #branco {
+    accent-color: rgb(235, 219, 219);;
+}
+
+fieldset #prata {
+    accent-color: rgb(106, 106, 106);;
+}
+
+.info p {
+  margin-left: 20px;  
+  text-align:justify;
+}
+
+.info h1 {
+   margin-left: 20px;  
+   text-align:justify;
+}
+
+.info label {
+    font-weight:lighter;
+    font-size: 14px;
+}
+
+.info fieldset {
+    font-weight: bolder;
+}
+
+.info h3 {
+    margin-left: 20px;  
+    text-align:justify;
+    text-align: center;
+    background-color: #2d3748;   
+    color: #fff;                             
+    padding: 10px 20px;          
+    font-size: 18px;             
+    font-weight: bold;           
+    border-radius: 6px;          
+    cursor: pointer;            
+}
+
+.info h3:hover {
+    transform: scale(1.01);
+}
+

@@ -1,0 +1,154 @@
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    color: #32160c;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background:#4b3c30;
+    color: #32160c;
+}
+
+    header {
+        background: url("capa.jpg") no-repeat center center;
+        background-size: cover;   
+        height: 100vh;            
+        width: 100%;              
+        position: relative;      
+        color: rgb(227, 123, 189);    
+    }         
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #32160c;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background: #fff;
+    color:#32160c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 2000px;
+    margin: auto;
+    color: #32160c;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.sobre-filme {
+    display: flex;
+    align-items: flex;
+    gap: 1rem;
+}
+
+.foto-filme {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #32160c;
+}
+
+.sobre-informacoes {
+    flex:1;
+}
+
+.sobre-informacoes h2 {
+    margin-bottom: 0.5rem;
+}
+
+.sobre-informacoes p {
+    font-size: 1rem;
+    color: #93253d;
+}
+.cards {
+    display: block; 
+    gap: 1rem; 
+}
+
+.card {
+    background: radial-gradient(circle, rgba(245, 210, 183, 0.614) 0%, rgba(80, 33, 2, 0.575) 100%);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+#contatos {
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    background: #ffdfc290;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.curiosidades-filme {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+}
+
+.item {
+    display: flex;           
+    align-items: center;    
+    gap: 1rem;              
+}
+
+.foto-curiosidades {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #32160c;
+}
+
+.sobre-informacoes {
+    display: flex;
+    color: #32160c;
+    flex-direction: column; 
+}
+

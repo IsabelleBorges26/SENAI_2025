@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freaky Friday Tatto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Freaky Friday Tatto</h1>
+        <nav> 
+            <ul> 
+                <li><a href="#cadastros">Cadastrar Usuário</a></li>
+                <li><a href="#clientestatu">Clientes e Tatuadores</a></li>
+                <li><a href="#agendamentos">Agendamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="cadastros" action="" method="">
+        <p>
+            <label for="usuario">Selecione o usuário</label>
+            <select id="usuario"> 
+                <option>Cliente</option>
+                <option>Tatuador</option>
+            </select>
+        </p>
+        <p>
+            <label for="nome">Nome</label> 
+            <input type="text" id="nome" placeholder="Informe seu nome" required />
+        </p>
+        <p>
+            <label for="telefone">Telefone</label> 
+            <input type="text" id="telefone" placeholder="Informe o telefone" required />
+        </p>
+        <p>
+            <label for="senha">Senha</label> 
+            <input type="text" id="senha" placeholder="Crie uma senha" required />
+        </p>
+        <p>
+            <input type="button" value="Cadastrar Usuário" onclick="Cadastrar()" />
+            <script>
+                function Cadastrar() {
+                    alert("Usuário cadastrado com sucesso!");
+                }
+            </script>
+        </p>
+    </form>
+
+    <br>
+
+<section id="clientestatu">
+    <h2>Listar Usuários</h2>
+    <button id="btnListar">Listar Clientes e Tatuadores</button>
+
+    <h3>Clientes:</h3>
+    <ul id="listaClientes"></ul>
+
+    <h3>Tatuadores:</h3>
+    <ul id="listaTatuadores"></ul>
+</section>
+
+
+    <br>
+
+    <section id="agendamentos">
+        <h2>Agendar Sessão</h2>
+        <form id="agendar">
+            <p>
+                <label for="cliente-agenda">Cliente</label>
+                <select id="cliente-agenda">
+                    <option>Lucas Silva</option>
+                    <option>Ana Pereira</option>
+                    <option>João Costa</option>
+                    <option>Maria Oliveira</option>
+                </select>
+            </p>
+            <p>
+                <label for="tatuador-agenda">Tatuador</label>
+                <select id="tatuador-agenda">
+                    <option>Rafael Tattoo</option>
+                    <option>Camila Ink</option>
+                    <option>Bruno Art</option>
+                    <option>Larissa Black</option>
+                </select>
+            </p>
+            <p>
+                <label for="data-agenda">Data</label>
+                <input type="date" id="data-agenda" required />
+            </p>
+            <p>
+                <label for="hora-agenda">Hora</label>
+                <input type="time" id="hora-agenda" required />
+            </p>
+            <p>
+                <input type="button" value="Agendar Sessão" onclick="Agendar()" />
+                <script>
+                    function Agendar() {
+                        alert("Agendamento realizado com sucesso!");
+                    }
+                </script>
+            </p>
+        </form>
+    </section>
+
+</body>
+<script src = "script.js"> </script>
+</html>

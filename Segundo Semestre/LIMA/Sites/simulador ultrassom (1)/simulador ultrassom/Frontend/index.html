@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Ultrassom Educativo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Simulador de Ultrassom 🧑‍⚕️</h1>
+        <p>Arraste o transdutor sobre a barriga para visualizar o Ultrassom!</p>
+    </header>
+
+    <main class="painel">
+        <div class="tela">
+            <div class="area-gravida">
+                <img src="assets/mulhergravida.png" alt="Mulher grávida" class="gravida" id="gravida" />
+            </div>
+
+            <div class="visor-ultrassom">
+                <img src="assets/ultrassom.gif" alt="Imagem do bebê no ultrassom" class="ultrassom" />
+            </div>
+
+            <img src="assets/transdutor.png" alt="Transdutor de ultrassom" class="transdutor" id="transdutor" />
+        </div>
+
+        <audio id="somUltrassom" src="assets/som.mp3"></audio>
+
+    </main>
+
+    <footer>
+        <p> &copy; Desenvolvido por Maria Eduarda, Isabelle, Gabrielly S. e Mirella | Trabalho de Física-LIMA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

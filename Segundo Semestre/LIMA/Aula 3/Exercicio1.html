@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Elaborado</title>
+</head>
+<body>
+    <h1> Formulário </h1> </center>
+    <fieldset> 
+    <legend> Dados Pessoais </legend>
+    <form action ="" method ="">
+        <p>
+            <label  for="Nome"> Nome: </label> 
+            <input type="text" id="Nome" required />
+        </p>
+        <p>
+            <label  for="Endereço"> Endereço: </label> 
+            <input type="text" id="Endereço" required />
+        </p>
+        <p>
+            <label  for="Cidade"> Cidade: </label> 
+            <input type="text" id="Cidade" required />
+        </p>
+        <p>
+            <label for="Estado"> Estado: </label>
+            <select id="Estado" > 
+                <option> São-Paulo </option>
+                <option> Minas-Gerais </option>
+                <option> Paraná </option>
+            </select>
+        </p>
+    </fieldset>
+    <br> 
+
+    <fieldset>
+    <legend> Dados Profissionais </legend>
+        <p>
+            <legend> Natureza do Cargo </legend>
+            <input type="radio" id="Gere" name="Natureza do Cargo" />
+            <label for="Gere" > Gerente </label>
+
+            <input type="radio" id="fina" name="Natureza do Cargo" />
+            <label for="fina" > Financeiro </label>
+
+            <input type="radio" id="Recp" name="Natureza do Cargo" />
+            <label for="Recp" > Recpção </label>
+
+            <input type="radio" id="Adm" name="Natureza do Cargo" />
+            <label for="Adm" > Administrativo </label>
+
+            <input type="radio" id="Jur" name="Natureza do Cargo" />
+            <label for="Jur" > Jurídico </label>
+        </p>
+
+         <legend> Área de Interesse </legend>
+                <input type="checkbox" id="Computação" />
+                <label for="Computação"> Computação </label>
+                <input type="checkbox" id="Biologia" />
+                <label for="Biologia"> Biologia </label>
+                <input type="checkbox" id="Meio Ambiente" />
+                <label for="Meio Ambiente"> Meio Ambiente </label>
+                <input type="checkbox" id="Engenharia" />
+                <label for="Engenharia"> Engenharia </label>
+                <input type="checkbox" id="História" />
+                <label for="História"> História de Bufula </label
+                <br>
+
+        <p>
+            <label for="MiniC"> Mini-Curriculo </label>
+            <textarea id="MiniC"> </textarea>
+        </p>
+
+    </fieldset>
+
+    <p>
+        <button onclick="enviar()">Enviar </button>
+            <script> 
+                function enviar(){
+                    alert ("Dados enviados com sucesso!")
+                }
+            </script>    
+        <input type="reset" value="Limpar" />
+            
+    </p>
+
+</form>
+</body>
+</html>

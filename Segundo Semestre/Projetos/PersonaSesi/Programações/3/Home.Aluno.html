@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard do Aluno</title>
+  <link rel="stylesheet" href="style.Home.Aluno.css">
+
+</head>
+<body>
+  <header>
+    <button class="btn-voltar"> 🏠 Voltar ao Início </button>
+    <div class="usuario">
+      <span>Aluno: João Silva </span>
+      <button class="btn-sair"> Sair </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Bem-vindo, João Silva!</h1>
+
+    <div class="cards">
+  <div class="card">
+    <h3>Tarefas Pendentes</h3>
+    <ul class="checklist">
+      <li><input type="checkbox" id="tarefa1"><label for="tarefa1"> Fazer exercício de Matemática</label></li>
+      <li><input type="checkbox" id="tarefa2"><label for="tarefa2"> Estudar para prova de Português</label></li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Próximas Provas</h3>
+    <ul class="checklist">
+      <li><input type="checkbox" id="prova1"><label for="prova1"> Prova de História - 30/10</label></li>
+      <li><input type="checkbox" id="prova2"><label for="prova2"> Prova de Ciências - 05/11</label></li>
+    </ul>
+  </div>
+</div>
+
+    <section class="conteudo">
+      <div class="grafico">
+        <h2>Desempenho por Matéria</h2>
+        <p>Notas vs Média da Turma</p>
+        <canvas id="graficoNotas"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

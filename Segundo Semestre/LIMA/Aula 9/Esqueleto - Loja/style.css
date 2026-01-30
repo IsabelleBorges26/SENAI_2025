@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+  
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(151, 203, 245);
+      
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+}
+
+header i {
+    color: #2b547f;
+    display: none !important;
+}
+
+header img {
+    width: 190px;
+    height: 8vh;
+}
+
+ul {
+    list-style: none;
+}
+
+header ul li {
+    color: #2b547f;
+    display: inline;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    width: 200px;
+    height: 90vh;
+    background-color: rgb(151, 203, 245);
+    border-top: 2px solid #ffffff;
+}
+
+nav ul li {
+    width: 200px;
+    padding: 15px;
+    color: #2b547f;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav ul li:hover {
+    background-color: #cde0ee; 
+}
+
+main {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    row-gap: 15px;
+}
+
+main .box {
+    width: 200px;
+    height: 350px;
+    background-color: #cde0ee;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    header ul {
+        display: none;
+    }
+
+    header i {
+        display: block !important;
+    }
+
+    .container nav {
+        position: absolute;
+        top: 0;
+        left: -200px;
+        height: 100vh;
+    }
+}
+
+.box img {
+    width: 100%;
+    max-height: 60%;
+    border-radius: 10px 10px 0 0;
+}
+
+.box .info {
+    width: 100%;
+    max-height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.info button {
+    width: 80%;
+    align-self: center;
+    background-color: #2b547f;
+    color: #cde0ee;
+    border: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

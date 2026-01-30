@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ff92b0, #ffc1d1);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 10px;
+}
+
+.container {
+  background: #fff;
+  width: 90%;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(255, 146, 176, 0.5);
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #ff4d8b;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: #ffe6ee;
+  padding: 20px 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h2 {
+  color: #e33e74;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.card p, .card li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.formula {
+  background: #ffd9e5;
+  padding: 10px 15px;
+  border-left: 5px solid #ff4d8b;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

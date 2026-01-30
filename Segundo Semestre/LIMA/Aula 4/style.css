@@ -1,0 +1,76 @@
+
+body {
+   background: url(Fundo.jpg) no-repeat; /* Define a imagem de fundo e impede repetição */
+   background-size: cover; /* Faz a imagem cobrir toda a tela */
+   margin: 0; /* Remove margens padrão do navegador */
+   padding: 0; /* Remove padding padrão do navegador */
+   color:#f0f8ff; /* Define a cor do texto */
+}
+
+header {
+    background-color: #a06b51; /* Cor de fundo do cabeçalho */
+    color:#e6cdc2; /* Cor do texto do cabeçalho */
+    padding: 10px 0; /* Espaçamento interno (10px em cima e embaixo) */
+    text-align: center; /* Centraliza o texto */
+}
+
+header h1 {
+    margin: 0; /* Remove margem padrão do título */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding da lista */
+}
+
+nav ul a {
+    color: #e6cdc2; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Itens da lista de navegação */
+nav ul li {
+    display: inline; /* Faz os itens ficarem na mesma linha */
+    margin: 0 10px; /* Espaçamento horizontal entre os itens */
+}
+
+.banner {
+    /* background: url(.gif) no-repeat; */ 
+    background-color: #e6cdc2; /* Cor de fundo do banner */
+    padding: 7 px 0; /* Espaçamento vertical */
+    text-align: center; /* Centraliza o conteúdo */
+    color: #41271a; /* Cor do texto dentro do banner */
+}
+
+.banner h2 {
+    font-size: 30px; /* Tamanho da fonte do título do banner */
+}
+
+section {
+    padding: 20px; /* Espaçamento interno */
+    margin: 0 10px;  /* Margem horizontal */
+    color: #41271a; /* Cor do texto */
+}
+
+.cartao {
+    border: 1px solid #e6cdc2; /* Borda do cartão */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior entre cartões */
+    display: inline-block; /* Faz os cartões ficarem lado a lado */
+    width: 200px; /* Largura fixa */
+    vertical-align: top; /* Alinha os cartões ao topo */
+    background-color: rgba(230, 205, 194, 0.8); /* Cor de fundo semi-transparente */
+    box-shadow: 0 4px 8px rgba(230, 205, 194, 0.8); /* Sombra */
+    transition: transform 0,3s ease, box-shadow 0,3s ease; /* ANOTAÇÃO: deve usar ponto e não vírgula, ou seja, "0.3s" */
+}
+
+.cartao:hover {
+    transform: translatey(-10px);  /* Move o cartão para cima ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(230, 205, 194, 0.8); /* Sombra maior ao passar o mouse */
+}
+
+.cartao img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do cartão */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+}

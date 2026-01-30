@@ -1,0 +1,142 @@
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background:#ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem 2rem;
+    font-family: Arial Black;
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);         
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: Arial;
+}
+
+nav ul li a:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: flex;
+    gap: 1rem;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #bb1717;
+}
+
+.sobre-informacoes {
+    flex:1;
+}
+
+.sobre-informacoes h2 {
+    margin-bottom: 0.5rem;
+}
+
+.sobre-informacoes p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    margin-top: 60px; 
+}
+
+.card {
+    text-align: center; 
+    background:radial-gradient(circle, rgba(255, 255, 255, 0.5)0%, rgba(255, 255, 255, 0.2)100%);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0%;
+    object-fit: cover;
+    border: 1px solid #bb1717;
+    box-shadow: o 4px 8px rgba(97, 46, 46, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.hobby i{
+    font-size: 2rem;
+    color: crimson;
+}
+
+#frase {
+    text-align: center;      
+    margin-top: 50px;     
+    font-family: Arial Black;   
+}
+
+#frase h1 {
+    font-size: 3rem;         
+    font-weight: bold;       
+}
+
+#descricao {
+    text-align: center;      
+    margin-top: 20px;     
+}
+
+#descricao h1 {
+    font-size: 1rem;         
+    color: #868585;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: normal; /* garante que não fique em negrito */
+}
